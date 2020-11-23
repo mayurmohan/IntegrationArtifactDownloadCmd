@@ -1,4 +1,4 @@
-@Library('piper-lib-os@cpiDeployIntegrationDesigntimeArtifact') _
+@Library('piper-lib-os') _
 
 node() {
   stage('init') {
