@@ -1,7 +1,7 @@
 steps:
   cpiDeployIntegrationDesigntimeArtifact:
     cpiCredentialsId: 87a6418b-2ac1-4839-b22a-b537f55f2176
-    integrationFlowId: iflow1
+    integrationFlowId: flow1
     integrationFlowVersion: 1.0.1
     platform: cf
     host: https://roverpoc.it-accd002.cfapps.sap.hana.ondemand.com
