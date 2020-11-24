@@ -10,7 +10,6 @@ node() {
       sh """|#!/bin/bash -e
             |git clone https://github.com/mayurmohan/jenkins-library piperlib
             |cd piperlib
-            |git checkout cpiDeployIntegrationDesigntimeArtifact
             |go build -o piper .
             |mv piper ..
             |cd -
