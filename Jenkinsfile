@@ -21,6 +21,7 @@ node() {
     }
   }
   stage('cpiDeployIntegrationDesigntimeArtifact Command') {
-      cpiDeployIntegrationDesigntimeArtifact script: this
+      def response = cpiDeployIntegrationDesigntimeArtifact script: this
+      println 'CPI response:-' + response
   }
 }
