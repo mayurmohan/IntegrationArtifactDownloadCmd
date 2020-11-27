@@ -22,7 +22,7 @@ node() {
   }
   stage('cpiDeployIntegrationDesigntimeArtifact Command') {
       def status = cpiDeployIntegrationDesigntimeArtifact script: this
-    if (status != null){
+    if (status == null){
        def error = cpiGetiFlowMplStatus script: this
        println 'CPI response:-' + error
     }
