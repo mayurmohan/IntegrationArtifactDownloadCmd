@@ -24,7 +24,14 @@ node() {
       def status = cpiDeployIntegrationDesigntimeArtifact script: this
     if (status == null){
        def error = cpiGetiFlowMplStatus script: this
-       println 'CPI response:-' + error
+	   
+	   if (error == null){
+		   
+		   error = cpiDownloadiFlowArtifact script: this
+	   
+	    println 'CPI response:-' + error
+	   }
+
     }
   }
 }
