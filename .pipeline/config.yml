@@ -1,6 +1,6 @@
-iflow:
-- name: flow1
-  version: 1.0.1
+general:
+  iflowName: flow1
+  iflowVersion: 1.0.1
 
 steps:
   cpiDeployIntegrationDesigntimeArtifact:
