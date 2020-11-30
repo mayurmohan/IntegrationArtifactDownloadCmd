@@ -26,10 +26,8 @@ node() {
        def error = cpiGetiFlowMplStatus script: this
 	   
 	   if (error == null){
-		   
-		   error = cpiDownloadiFlowArtifact script: this
-	   
-	    println 'CPI response:-' + error
+		  error = cpiDownloadiFlowArtifact script: this
+	          println 'CPI response:-' + error
 	   }
 
     }
