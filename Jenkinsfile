@@ -28,7 +28,8 @@ node() {
 	   if (error == null){
 		   
 		   error = cpiDownloadiFlowArtifact script: this
-		    def folder=iflow.name;
+		   def iflow = globalPipelineEnvironment.configuration.iflow
+		   def folder=iflow.name;
 		  fileOperations([fileUnZipOperation(filePath: folder + ".zip", targetLocation: folder)])
 
 		 def files = findFiles excludes: '', glob: folder + '/**/*';
