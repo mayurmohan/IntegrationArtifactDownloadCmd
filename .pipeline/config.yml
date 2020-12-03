@@ -30,4 +30,4 @@ steps:
     platform: cf
     host: https://roverpoc.it-accd002.cfapps.sap.hana.ondemand.com
     parameterKey: myheader
-    ParameterValue: test
+    parameterValue: test
