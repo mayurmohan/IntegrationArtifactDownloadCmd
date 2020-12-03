@@ -49,8 +49,12 @@ node() {
 			println 'initiate workspace cleanup';
 			fileOperations([fileDeleteOperation(excludes: '', includes: folder + ".zip")])
 		
+		//test some other commands
+			
 			def endpoint = cpiGetiFlowServiceEndpoint script: this
-			println 'iflow deploy endpoint:' + endpoint
+			println endpoint
+			
+			cpiUpdateIflowDesigntimeConfigurationParameter script: this
 	   }
 
     }
