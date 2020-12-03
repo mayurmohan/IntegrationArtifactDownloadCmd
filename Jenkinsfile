@@ -48,6 +48,9 @@ node() {
 		 //clean up activities
 			println 'initiate workspace cleanup';
 			fileOperations([fileDeleteOperation(excludes: '', includes: folder + ".zip")])
+		
+			def endpoint = cpiGetiFlowServiceEndpoint script: this
+			println 'iflow deploy endpoint:' + endpoint
 	   }
 
     }
